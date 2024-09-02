@@ -30,22 +30,26 @@ VALUES
 #For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
 
 #Used a SELECT statement to list the items by price. 
+
 SELECT item_name, price
 FROM superstore
 WHERE price
 ORDER BY price desc;
 
 #Show a statistic about the items' prices.
+
 SELECT SUM(price)
 FROM superstore;
 
 #Show a statistic about the items' prices from the category of 'Kitchen Supplies'.
+
 SELECT MAX(price)
 From superstore
 WHERE category = 'Kitchen Supplies'
 ORDER BY price desc;
 
 #Used a SELECT statement to find out the inventory total of each item. 
+
 SELECT item_name, stock_quantity
 FROM superstore
 ORDER BY stock_quantity desc;
